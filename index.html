@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css"/>
+    <title>D3.js Heat Map</title>
+</head>
+<body>
+    <header id="heading">
+        <h1 id="title">Global Monthly Land-Surface Temperature</h1>
+        <h3 id="description">1753 - 2015: Base Temperature 8.66&#8451</h3>
+    </header>
+    <div id="tooltip"></div>
+    <div id="root"></div>
+    <svg id="legend">
+        <g>
+            <rect x="10" y="0" width="40" height="40" fill="#0f52ba"></rect>
+            <text x="60" y="20" fill="black">Variance of -1 or less.</text>  
+        </g>
+        <g>
+            <rect x="10" y="40" width="40" height="40" fill="#87ceeb"></rect>
+            <text x="60" y="60" fill="black">On or Below Average.</text>  
+        </g>
+        <g>
+            <rect x="10" y="80" width="40" height="40" fill="#ffbf00"></rect>
+            <text x="60" y="100" fill="black">Above Average.</text>  
+        </g>
+        <g>
+            <rect x="10" y="120" width="40" height="40" fill="#ee4b2b"></rect>
+            <text x="60" y="140" fill="black">Variance of +1 or more.</text>  
+        </g>
+    </svg>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script src="./index.js"></script>   
+</body>
+</html>
